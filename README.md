@@ -1,247 +1,422 @@
-# portfolio-clone
+PORTFOLIO-CLONE
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart Video Creation Tools</title>
-  <style>
-    
+  <meta charset="UTF-8">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="portfolio type 2.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <style>
     body {
-      background: #f8f8f8;
-      padding: 40px;
-      color: #333333;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+   
+      
     }
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.05);
-    }
-
-    .header {
+    header {
+      background-color: #0a0c4d;
+      color: yellow;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
-      gap: 20px;
+      align-items: center;
+    }
+    
+    .skill-card i { 
+        color: #0a0c4d;
+        max-height: 130px;
     }
 
-    .header-text {
-      max-width: 650px;
+    header h1 {
+      margin: 0;
+      text-transform: capitalize;
+      text-decoration: solid; 
+      text-shadow: #000000;
+      text-decoration-style: double;
+      text-size-adjust: 20px;
+     font-style:italic;
+     font-family: 'Times New Roman', Times, serif;
+      
     }
 
-    .header-text h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .header-text p {
-      color: #555;
-      line-height: 1.5;
-    }
-
-    .header-text a {
-      display: inline-block;
-      margin-top: 15px;
-      color: #6f4cf4;
+    nav a {
+      color: yellow;
+      margin: 0 10px;
       text-decoration: none;
-      font-weight: bold;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
     }
 
-    .rating-box {
-      background: linear-gradient(135deg, #d5ccf7, #f3e9ff);
-      padding: 20px;
-      border-radius: 13px;
+    .intro {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .intro-text {
+      max-width: 500px;
+      justify-content: center;
+    }
+
+    .intro-text h2 {
+      font-size: 28px;
+      color: #0a0c4d;
+      justify-content: center;
+    }
+
+    .intro-text p {
+      font-size: 16px;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .btn {
+      background-color: #0a0c4d;
+      color:yellow;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      padding-right: 30px;
+      
+    }
+    .btn:hover {
+        color: #ff0000;
+    }
+
+    .intro-img {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    
+    
+
+    section {
       text-align: center;
-      display: block;
+      padding: 30px 20px;
+    }
+
+    h3 {
+      color: #0a0c4d;
+      font-size: 24px;
+      justify-content: center;
     }
    
-        
-   .rating-item {
-      display: flex inline;
-      align-items: center;
+     
+    .portfolio-section {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: linear-gradient(to right, #ffffff, #9b9cf0);
+      border-radius: 8px;
+      width: 300px;
+      padding: 15px;
+      box-shadow: 50px 54px 58px rgba(0,0,0,0.1);
+      transition: all 1sec;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      color: #003300;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #0a0c4d;
+    }
+
+    .buttons {
+      margin-top: 10px;
+      color: yellow;
+    }
+
+    .buttons button {
+      background-color: #0a0c4d;
+      color: yellow;
+      border: none;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 30px;
+      cursor: pointer;
+
+    }
+    .buttons :hover{
+        color: hsl(0, 100%, 50%);
+    }
+
+    .contact-section {
+     padding: 50px 30px;
+     margin: 60px auto;
+     max-width: 900px;
+     background: linear-gradient(to right, #ffffff, #9b9cf0);
+     border-radius: 20px;
+     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0a0c4d;
+}
+
+.contact-section h2 span {
+  color: yellow;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0a0c4d;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #0a0c4d;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #0a0c4d;
+  outline: none;
+}
+input ::placeholder{
+    color: #ffffff
+}
+.gender{
+    display: flex;
+    align-items: center;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+ 
+}
+
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.submit-btn {
+  padding: 14px;
+  background-color: #0a0c4d;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  color: yellow;
+}
+
+
+
     
-    }
-
-    .icon {
-      width: 24px;
-      height: 24px;
-      background-color: #ffffff;
-      border-color: black;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      color: #6b5cd2;
-    }
-
-    .text-content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .value {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-
-    .label {
-      font-size: 0.9em;
-      color: #555;
-    }
-
-    .rating-box div {
-      margin: 10px 0;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .features h4 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      color: #000;
-    }
-
-    .features p {
-      color: #555;
-      font-size: 15px;
-    }
-
-    .highlight-section {
-      background: linear-gradient(135deg, #e9e2fc, #f8f4ff);
-      padding: 30px;
-      border-radius: 16px;
-      margin-top: 40px;
-    }
-
-    .highlight-section h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .highlight-section a {
-      color: #6f4cf4;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .stat-box {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    .stat-box strong {
-      font-size: 20px;
-      color: #6f4cf4;
-    }
-
-    .stat-box p {
-      font-size: 14px;
-      color: #555;
-      margin-top: 5px;
-    }
-  </style>
-
-
+   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="header-text">
-        <h1>Smart video creation tools</h1>
-        <p>Creating stunning videos has never been easier. Our AI-powered platform brings you a seamless, intuitive experience with advanced tools that save time and boost creativity. Whether you're generating videos from text, customizing avatars, or adding lifelike voiceovers.</p>
-        <a href="#">Get Started Now</a>
-      </div>
-      <div class="rating-box">
 
-         <div class="icon">★</div>
+  <header>
+    <h1>MSN</h1>
+    <nav>
+        <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Expertise</a>
+      <a href="#">Skiils</a>
+      <a href="#">Contact</a>
+    </nav>
+   </div>
+  </header>
 
-     <div class="text-content">
+  <div class="intro">
+    <div class="intro-text">
+      <h2>Hey M.SAAD NASIR here!<br>Learning Full Stack Development at <span style="color: rgb(76, 226, 16);">SMIT</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam magnam laborum distinctio. Itaque enim illum perferendis consequuntur totam laudantium, obcaecati eaque, aliquid possimus quibusdam voluptas facilis, impedit iusto! Eaque, odit.</p>
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+      <div class="skill-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-github"></i>
+      
 
-      <div class="value">4.9/5</div>
-      <div class="label">Average Rating</div>
-    </div>
 
-         <div class="icon">🏆</div>
 
-    <div class="text-content">
 
-      <div class="value">10+</div>
-      <div class="label">Awards Won</div>
-    </div>
+       </div>
+      <button class="btn">Hire Me!</button>
+     </div>
+  <div class="intro-img">
+    <img src="./image/Adobe Express - file.png" alt="M.Saad Nasir">
   </div>
-    </div>
   </div>
+    <hr/>
     
-    <div class="features">
-      <div>
-        <h4>Image-to-video Conversion</h4>
-        <p>Seamless turn your photos into dynamic.</p>
+  </div>
+
+  <section>
+    <h3>ABOUT <span style="color: yellow">ME!</span> </h3>
+    <p>I am a passionate <strong><span style="color: #0a0c4d;" >Graphic Designer</span></strong> with a strong eye for detail and a love for visual storytelling. Over the past few years, I’ve developed brand identities, marketing materials, and digital assets that communicate messages with clarity and impact. While design is my primary focus, I also bring foundational web development skills—creating responsive websites using <strong><span style="color: #0a0c4d;" >HTML and CSS</span></strong>. My goal is always to merge aesthetics with functionality to deliver meaningful user experiences.</p>
+    <button class="btn">About ME!</button>
+    <hr/>
+  </section>
+  <section>
+  <h2> <span style="color: #0a0c4d;"> EXPERTISE! 👁️</span></h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate in quaerat labore obcaecati reprehenderit ratione cupiditate, totam natus, aspernatur mollitia quasi delectus consectetur voluptatem excepturi nemo eum error? At, eum!</p>
+  </section>
+
+    <div class="portfolio-section">
+    <div class="card">
+      <img src="./image/istockphoto-1371339413-612x612.jpg" alt="Portfolio Image">
+      <h3>Personal Portfolio</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ex magni qui.</p>
+      <div class="buttons">
+        <button>Preview</button>
+        <button>View Source</button>
       </div>
-      <div>
-        <h4>Speech Integration</h4>
-        <p>Incorporate your voice or narration to personalize.</p>
-      </div>
-      <div>
-        <h4>Customisable Templates</h4>
-        <p>Choose from a variety of professionally designed.</p>
-      </div>
-      <div>
-        <h4>Real Time Collaboration</h4>
-        <p>Effortlessly collaborate with friends & colleagues.</p>
+    </div>
+    
+    <div class="card">
+      <img src="./image/portfolio image.jpg" alt="Portfolio Image">
+      <h3>Personal Portfolio</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ex magni qui.</p>
+      <div class="buttons">
+        <button>Preview</button>
+        <button>View Source</button>
       </div>
     </div>
 
-    <div class="highlight-section">
-      <h2>Creating stunning videos</h2>
-      <p>Craft compelling videos from textual descriptions, bringing your narratives to life.</p>
-      <a href="#">Get Started Now</a>
-
-      <div class="stats">
-        <div class="stat-box">
-          <strong>150k+</strong>
-          <p>Videos Created</p>
-        </div>
-        <div class="stat-box">
-          <strong>100+</strong>
-          <p>Countries</p>
-        </div>
-        <div class="stat-box">
-          <strong>50+</strong>
-          <p>AI Avatars</p>
-        </div>
-        <div class="stat-box">
-          <strong>1,500+</strong>
-          <p>AI Templates</p>
-        </div>
+    <div class="card">
+      <img src="./image/portfoliooo (1).jpg" alt="Portfolio Image">
+      <h3>Personal Portfolio</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ex magni qui.</p>
+      <div class="buttons">
+        <button>Preview</button>
+        <button>View Source</button>
       </div>
     </div>
   </div>
+
+  <hr/>
+
+  <section class="contact-section">
+  <h2>📬 Contact <span>Me</span></h2>
+  <form class="contact-form">
+    <div class="row">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@mail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+123 456 7890">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <div class="gender">
+        <label>Gender</label>
+        </div>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="eyeType">Eye Contact Type</label>
+        <select id="eyeType" required>
+          <option value="">Select type</option>
+          <option value="friendly">Friendly</option>
+          <option value="intense">Intense</option>
+          <option value="brief">Brief</option>
+          <option value="nervous">Avoidant</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="4" placeholder="Say something..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+</section>
+
+
+  
 </body>
 </html>
-
-
-
-
+  
   
 
